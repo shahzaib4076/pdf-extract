@@ -1,3 +1,8 @@
+"""
+PDFExtract Backend
+Created and completed from start to finish by Muhammad Shahzaib Ali.
+A high-performance in-memory PDF image extraction service.
+"""
 from fastapi import FastAPI, UploadFile, HTTPException
 from fastapi.responses import StreamingResponse
 from fastapi.middleware.cors import CORSMiddleware
