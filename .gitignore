@@ -1,9 +1,26 @@
+# Root .gitignore
+# Created for PDFExtract
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Node modules
+node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 venv/
+.env
+
+# Angular
+.angular/
+dist/
+.vscode/
+
+# OS
 .DS_Store
 Thumbs.db
-*.log
-__pycache__/
-node_modules/
-dist/
-.angular/
-.vscode/

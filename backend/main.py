@@ -5,7 +5,11 @@ import fitz  # PyMuPDF
 import io
 import zipfile
 
-app = FastAPI()
+app = FastAPI(
+    title="PDFExtract API",
+    description="High-performance in-memory PDF image extraction service.",
+    version="1.0.0"
+)
 
 # Configure CORS
 app.add_middleware(
