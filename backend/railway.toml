@@ -1,0 +1,22 @@
+[build]
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "uvicorn main:app --host 0.0.0.0 --port $PORT"
+```
+
+---
+
+**Step 3 — Double-check your repo structure on GitHub**
+
+Open your GitHub repo and confirm it looks exactly like this:
+```
+your-repo/
+├── backend/
+│   ├── Dockerfile        ✅
+│   ├── main.py           ✅
+│   ├── requirements.txt  ✅
+│   └── Procfile
+├── frontend/
+│   └── ...
+└── docker-compose.yml
