@@ -32,7 +32,7 @@
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/shahzaibali3029/pdf-extract.git
+   git clone https://github.com/shahzaibali4076/pdf-extract.git
    cd pdf-extract
    ```
 
@@ -55,4 +55,4 @@
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-*Created and completed from start to finish with ❤️ by [Muhammad Shahzaib Ali](https://github.com/shahzaibali3029).*
+*Created and completed from start to finish with ❤️ by [Muhammad Shahzaib Ali](https://github.com/shahzaibali4076).*
