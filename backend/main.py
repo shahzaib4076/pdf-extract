@@ -20,8 +20,8 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://pdf-img-extract.netlify.app",  # replace after Netlify deploy
-        "http://localhost:4200",               # keep for local dev
+        "https://pdf-img-extract.netlify.app",
+        "http://localhost:4200",
     ],
     allow_credentials=True,
     allow_methods=["*"],  # Allows all methods
