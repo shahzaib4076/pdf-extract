@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class ExtractService {
-    private readonly apiUrl = 'https://pdf-extract-lrl6fm66l-shahzaibs-projects-d2576ba9.vercel.app/';
+    private readonly apiUrl = 'https://pdf-extract-lrl6fm66l-shahzaibs-projects-d2576ba9.vercel.app/api/extract-images';
     // private readonly apiUrl = 'http://localhost:8000/api/extract-images';
 
     constructor(private http: HttpClient) { }

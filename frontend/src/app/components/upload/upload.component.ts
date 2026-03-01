@@ -102,7 +102,7 @@ export class UploadComponent {
                 let message = 'An unexpected error occurred. Please try again.';
 
                 if (err.status === 0) {
-                    message = 'Unable to connect to the server. Make sure the backend is running on port 8000.';
+                    message = 'Unable to connect to the server. Please try again later.';
                 } else if (err.error instanceof Blob) {
                     // FastAPI errors come as JSON blobs since we requested responseType: 'blob'
                     const reader = new FileReader();
