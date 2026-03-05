@@ -24,11 +24,52 @@
 
 ### Prerequisites
 
-- Python 3.9+
-- Node.js 18+ & npm
-- Docker (optional, for containerized run)
+- **Standard**: Python 3.9+ and Node.js 18+ & npm
+- **Docker**: Docker Engine 20.10+ and Docker Compose v2+
 
-### Standard Setup
+---
+
+### 🐳 Docker Setup (Recommended)
+
+The easiest way to run the full stack locally — no Python or Node.js installation required.
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/shahzaibali4076/pdf-extract.git
+   cd pdf-extract
+   ```
+
+2. **Build and start both services**:
+   ```bash
+   docker compose up --build
+   ```
+   Docker will build the backend (FastAPI) and frontend (Angular → Nginx) images, then start them together.
+
+3. **Open the app**:
+   Navigate to **[http://localhost:4200](http://localhost:4200)** in your browser.
+
+   | Service  | URL                          |
+   |----------|------------------------------|
+   | Frontend | http://localhost:4200        |
+   | Backend  | http://localhost:8000        |
+   | API Docs | http://localhost:8000/docs   |
+
+4. **Stop the services**:
+   ```bash
+   docker compose down
+   ```
+
+> **How it works**: The Angular app is compiled with the backend URL baked in at build time (`NG_APP_API_URL=http://localhost:8000/api`). The frontend container waits for the backend to pass its health check before starting, so the app is always ready on first load.
+
+> **Custom backend URL**: If you need to point the frontend at a different backend (e.g., a remote server), pass the URL as a build argument:
+> ```bash
+> docker compose build --build-arg NG_APP_API_URL=https://your-backend.example.com/api
+> docker compose up
+> ```
+
+---
+
+### ⚙️ Standard Setup (Without Docker)
 
 1. **Clone the repository**:
    ```bash
