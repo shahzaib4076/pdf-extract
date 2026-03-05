@@ -96,4 +96,4 @@ The easiest way to run the full stack locally — no Python or Node.js installat
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-*Created and completed from start to finish with ❤️ by [Muhammad Shahzaib Ali](https://github.com/shahzaibali4076).*
+*Created and completed from start to finish with ❤️ by [Muhammad Shahzaib Ali](https://github.com/shahzaib4076).*
