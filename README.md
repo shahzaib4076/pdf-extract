@@ -35,7 +35,7 @@ The easiest way to run the full stack locally — no Python or Node.js installat
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/shahzaibali4076/pdf-extract.git
+   git clone https://github.com/shahzaib4076/pdf-extract.git
    cd pdf-extract
    ```
 
@@ -73,7 +73,7 @@ The easiest way to run the full stack locally — no Python or Node.js installat
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/shahzaibali4076/pdf-extract.git
+   git clone https://github.com/shahzaib4076/pdf-extract.git
    cd pdf-extract
    ```
 
