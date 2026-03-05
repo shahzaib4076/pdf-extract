@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 # Accept the API URL as a build argument (required by @ngx-env/builder)
-ARG NG_APP_API_URL=http://localhost:8000/api
+ARG NG_APP_API_URL=http://localhost:8000
 ENV NG_APP_API_URL=$NG_APP_API_URL
 
 # Build the app to the dist folder

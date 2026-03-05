@@ -18,7 +18,7 @@ services:
     build:
       context: ./frontend
       args:
-        - NG_APP_API_URL=http://localhost:8000/api
+        - NG_APP_API_URL=http://localhost:8000
     ports:
       - "4200:80"
     depends_on:
